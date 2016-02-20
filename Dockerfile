@@ -1,5 +1,5 @@
 FROM ubuntu:14.04.4
-MAINTAINER Peter Mescalchin "peter@magnetikonline.com"
+MAINTAINER Unboxed Support "support@nospamplease.unboxed.io"
 
 # To apply security upgrades, set this to the current date. It will invalidate
 # the cache, forcing the apt-get and apt-get -y upgrade to apply
