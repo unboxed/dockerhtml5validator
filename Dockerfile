@@ -1,5 +1,9 @@
-FROM ubuntu:14.04
+FROM ubuntu:14.04.4
 MAINTAINER Peter Mescalchin "peter@magnetikonline.com"
+
+# To apply security upgrades, set this to the current date. It will invalidate
+# the cache, forcing the apt-get and apt-get -y upgrade to apply
+RUN echo 2016-02-20-13:36 GMT
 
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install \
